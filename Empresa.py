@@ -9,9 +9,6 @@ class Empresa:
         self.lista_PdS=Simple_PuntosAtencion()
         self.lista_Transacciones=ListaDoble_Transacciones()
         self.siguiente=None
-    
-    def getPdS(self): #PdS: Puntos de Servicio
+    def getlista_PA(self):
         return self.lista_PdS
-
-    def getTransacciones(self):
-        return self.lista_Transacciones
+        

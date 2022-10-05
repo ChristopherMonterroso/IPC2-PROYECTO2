@@ -1,0 +1,20 @@
+digraph X{
+            rankdir=TB
+            node[shape=none fontname=Helvetica]
+            n1
+            [ label = <
+                <table>
+                    <tr><td bgcolor="white">Estado del punto de atención </td></tr>
+             </table>
+         > ];
+            n2
+            [ label = <
+                <table>
+                    <tr><td bgcolor="lightgray">Escritorios activos</td>      <td bgcolor="lightgray">Escritorios inactivos</td>    <td bgcolor="lightgray">Clientes en espera de atención</td>
+                        <td bgcolor="lightgray">Tiempo promedio de espera</td><td bgcolor="lightgray">Tiempo máximo de espera</td>  <td bgcolor="lightgray">Tiempo mínimo de espera</td>
+                        <td bgcolor="lightgray">Tiempo promedio de atención</td><td bgcolor="lightgray">Tiempo máximo de atención</td><td bgcolor="lightgray">Tiempo mínimo de atención</td>
+                    </tr> 
+                </table>> ];           
+
+         n1->n2
+         }

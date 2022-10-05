@@ -20,7 +20,7 @@ class ListaDoble_PA(): #PA : puntos de Atención
     def mostrarPA(self):
         tmp=self.inicio
         while tmp is not None:
-            print('Código: ',tmp.codigo,' Nombre: ',tmp.nombre,' dirección: ',tmp.direccion)
+            print('ID: ',tmp.codigo,' Nombre: ',tmp.nombre,' dirección: ',tmp.direccion)
             tmp=tmp.siguiente
 
 class ListaDoble_Transacciones:
@@ -37,9 +37,22 @@ class ListaDoble_Transacciones:
                 tmp=tmp.siguiente
             tmp.siguiente=nuevo
             nuevo.anterior=tmp
-
+    def comprobarID(self,id):
+        tmp=self.inicio
+        while tmp is not None:
+            if tmp.codigo==id:
+                return True
+            tmp=tmp.siguiente
+        return False
+    def getTransaccion(self,id):
+        tmp=self.inicio
+        while tmp is not None:
+            if tmp.codigo==id:
+                return int(tmp.tiempo)
+            tmp=tmp.siguiente
+        return None
     def mostrarTransaccion(self):
         tmp=self.inicio
         while tmp is not None:
-            print('código: ',tmp.codigo,' Nombre: ',tmp.nombre,' Tiempo: ',tmp.tiempo)
+            print('ID: ',tmp.codigo,' Nombre: ',tmp.nombre,' Tiempo: ',tmp.tiempo,'min')
             tmp=tmp.siguiente

@@ -19,14 +19,14 @@ class ListaSimple():
     def mostrarEmpresas(self):
         tmp=self.inicio
         while tmp is not None:
-            print("Código: ",tmp.codigo,' Nombre: ',tmp.nombre,' Abreviatura: ',tmp.abreviatura)
+            print("ID: ",tmp.codigo,' Nombre: ',tmp.nombre,' Abreviatura: ',tmp.abreviatura)
             
             tmp=tmp.siguiente
 
-    def getEmpresa(self,nombre):
+    def getEmpresa(self,codigo):
         tmp=self.inicio
         while tmp is not None:
-            if tmp.nombre==nombre:
+            if tmp.codigo==codigo:
                 return tmp
             tmp=tmp.siguiente
         return None
@@ -44,6 +44,7 @@ class ListaSimple():
                 return tmp.nombre
             tmp=tmp.siguiente
         return None
+    
     def getCodigo(self,codigo):
         tmp=self.inicio
         while tmp is not None:

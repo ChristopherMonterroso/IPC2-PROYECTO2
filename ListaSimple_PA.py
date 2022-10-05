@@ -19,13 +19,27 @@ class Simple_PuntosAtencion():
     def mostrarPuntos_Atencion(self):
         tmp=self.inicio
         while tmp is not None:
-            print("Código: ",tmp.codigo,' Nombre: ',tmp.nombre,' Abreviatura: ',tmp.direccion)
+            print("ID: ",tmp.codigo,' Nombre: ',tmp.nombre,' Dirección: ',tmp.direccion)
             tmp=tmp.siguiente
-            
-    def getPunto_Atencion(self,nombre):
+
+    def getPunto_Atencion(self,codigo):
         tmp=self.inicio
         while tmp is not None:
-            if tmp.nombre==nombre:
+            if tmp.codigo==codigo:
                 return tmp
             tmp=tmp.siguiente
         return None
+    def getNombre_Punto_Atencion(self,codigo):
+        tmp=self.inicio
+        while tmp is not None:
+            if tmp.codigo==codigo:
+                return tmp.nombre
+            tmp=tmp.siguiente
+        return None
+    def getCodigo(self,codigo):
+        tmp=self.inicio
+        while tmp is not None:
+            if tmp.codigo==codigo:
+                return True
+            tmp=tmp.siguiente
+        return False
