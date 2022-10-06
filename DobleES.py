@@ -200,7 +200,7 @@ class Lista_Escritorios():
             [ label = <
                 <table>
                     <tr><td bgcolor=\"lightgray\">Escritorio:</td>      <td bgcolor=\"lightgray\">"""+tmp.identificacion+"""</td></tr>
-                    <tr><td bgcolor=\"aliceblue\\">Encargado:</td>      <td bgcolor=\"aliceblue\">"""+tmp.encargado+"""</td></tr>
+                    <tr><td bgcolor=\"aliceblue\">Encargado:</td>      <td bgcolor=\"aliceblue\">"""+tmp.encargado+"""</td></tr>
                     <tr><td bgcolor=\"lightyellow\">Cliente en atención:</td>   <td bgcolor=\"lightyellow\">"""+str(tmp.cliente[0][1])+"""</td></tr>
                     <tr><td bgcolor=\"darkseagreen1\">Transacciones:</td>   <td bgcolor=\"darkseagreen1\">"""+str(tmp.cliente[0][2])+"""</td></tr>
                     <tr><td bgcolor=\"aliceblue\">Tiempo total de espera:</td>     <td bgcolor=\"aliceblue\">"""+str(tmp.cliente[0][3])+""" minutos</td></tr>      
